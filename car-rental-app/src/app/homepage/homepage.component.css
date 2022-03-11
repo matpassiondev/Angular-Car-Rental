@@ -1,0 +1,15 @@
+section
+{
+    display: flex;
+    flex-direction: row;
+    width: 60vw;
+}
+article
+{
+    margin-right: 20px;
+}
+img {
+    height: 30vh;
+    width: auto;
+    object-fit: cover;
+}
