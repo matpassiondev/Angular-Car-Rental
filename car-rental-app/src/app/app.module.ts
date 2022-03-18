@@ -9,6 +9,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LocationsComponent } from './locations/locations.component';
 import { AccountComponent } from './account/account.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { AccountComponent } from './account/account.component';
     HomepageComponent,
     ContactComponent,
     LocationsComponent,
-    AccountComponent
+    AccountComponent,
+    UserDashboardComponent
   ],
   imports: [
     BrowserModule,
