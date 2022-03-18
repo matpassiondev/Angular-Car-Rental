@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LocationsComponent } from './locations/locations.component';
 import { AccountComponent } from './account/account.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
     ContactComponent,
     LocationsComponent,
     AccountComponent,
-    UserDashboardComponent
+    UserDashboardComponent,
+    AdminDashboardComponent
   ],
   imports: [
     BrowserModule,
