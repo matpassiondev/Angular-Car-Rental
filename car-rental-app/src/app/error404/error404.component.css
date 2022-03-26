@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.error404_container {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.return_home {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1976d2;
+    border: 2px solid  #1976d2;
+    border-radius: 2px;
+    padding: .5em 1.5em;
+}

@@ -5,12 +5,15 @@ import { HomepageComponent } from './homepage/homepage.component';
 import { ContactComponent } from './contact/contact.component';
 import { LocationsComponent } from './locations/locations.component';
 import { AccountComponent } from './account/account.component';
+import { Error404Component } from './error404/error404.component';
 
 const routes: Routes = [
+  {path: '', component: HomepageComponent},
   {path: 'home', component: HomepageComponent},
   {path: 'locations', component: LocationsComponent},
   {path: 'contact', component: ContactComponent},
-  {path: 'account', component: AccountComponent}
+  {path: 'account', component: AccountComponent},
+  {path: '**', component: Error404Component},
 ]
 
 
