@@ -1,1 +1,10 @@
-<p>locations works!</p>
+<div class="location_container">
+<div class="one_car" *ngFor="let car of cars">
+    
+    <img [attr.src]="car.urlImg" alt="">
+    <p>Marque : {{car.brand}}</p>
+    <p>Modèle : {{car.model}}</p>
+    <p>Couleur : {{car.color}}</p>
+    <p>Prix : {{car.rentalPrice}} €</p>
+</div>
+</div>

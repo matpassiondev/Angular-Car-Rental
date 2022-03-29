@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.location_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 90vw;
+}

@@ -7,14 +7,17 @@ import { VehiclesService } from '../services/vehicles.service';
   styleUrls: ['./locations.component.css']
 })
 export class LocationsComponent implements OnInit {
-cars = [];
+cars : any ;
+
   constructor(private vehiclesService : VehiclesService) { }
 
   ngOnInit(): void {
-    this.vehiclesService.getVehicles().subscribe(
-      data => {this.cars = data},
-      error => console.log(error),
-    );
+    this.vehiclesService.getVehicles().subscribe(data => {
+      this.cars = data;
+      console.log("saucisse");
+      console.log(this.cars);
+      console.log("saucisse");
+      });
   }
 
 }
