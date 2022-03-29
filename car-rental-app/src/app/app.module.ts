@@ -10,6 +10,7 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LocationsComponent } from './locations/locations.component';
 import { AccountComponent } from './account/account.component';
+import { CarDetailsComponent } from './car-details/car-details.component';
 
 
 @NgModule({
@@ -19,7 +20,8 @@ import { AccountComponent } from './account/account.component';
     HomepageComponent,
     ContactComponent,
     LocationsComponent,
-    AccountComponent
+    AccountComponent,
+    CarDetailsComponent
   ],
   imports: [
     BrowserModule,

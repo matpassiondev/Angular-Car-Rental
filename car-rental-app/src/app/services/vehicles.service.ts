@@ -12,4 +12,9 @@ export class VehiclesService {
   let cars = [];
   return this.http.get('http://localhost:8080/api/v1/vehicles', {headers: {accept : '*/*'}})
   }
+
+  getVehicleByLicencePlate(licencePlate:string) {
+    let car = [];
+    return this.http.get('http://localhost:8080/api/v1/vehicles/'+licencePlate+'', {headers: {accept : '*/*'}})
+  }
 }

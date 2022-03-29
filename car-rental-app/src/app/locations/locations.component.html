@@ -1,10 +1,11 @@
-<div class="location_container">
-<div class="one_car" *ngFor="let car of cars">
+<div class="location-container">
+<div class="one-car" *ngFor="let car of cars">
     
     <img [attr.src]="car.urlImg" alt="">
     <p>Marque : {{car.brand}}</p>
     <p>Modèle : {{car.model}}</p>
     <p>Couleur : {{car.color}}</p>
     <p>Prix : {{car.rentalPrice}} €</p>
+    <a routerLink="/car-details/{{car.licencePlate}}" routerLinkActive="active" class="see-details-button">Voir</a>
 </div>
 </div>
