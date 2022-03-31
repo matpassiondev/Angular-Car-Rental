@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { LocationsComponent } from './locations/locations.component';
 import { AccountComponent } from './account/account.component';
 import { CarDetailsComponent } from './car-details/car-details.component';
+import { Error404Component } from './error404/error404.component';
 
 
 @NgModule({
@@ -21,7 +22,8 @@ import { CarDetailsComponent } from './car-details/car-details.component';
     ContactComponent,
     LocationsComponent,
     AccountComponent,
-    CarDetailsComponent
+    CarDetailsComponent,
+    Error404Component,
   ],
   imports: [
     BrowserModule,
