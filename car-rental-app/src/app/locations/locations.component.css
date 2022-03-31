@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.location-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    width: 90vw;
+}
+
+.see-details-button {
+    text-decoration: none;
+    font-weight: bold;
+    color: #1976d2;
+    border: 2px solid  #1976d2;
+    border-radius: 2px;
+    padding: .5em 1.5em;
+}
