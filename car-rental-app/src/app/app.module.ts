@@ -10,6 +10,8 @@ import { ContactComponent } from './contact/contact.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LocationsComponent } from './locations/locations.component';
 import { AccountComponent } from './account/account.component';
+import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { CarDetailsComponent } from './car-details/car-details.component';
 import { Error404Component } from './error404/error404.component';
 
@@ -22,6 +24,8 @@ import { Error404Component } from './error404/error404.component';
     ContactComponent,
     LocationsComponent,
     AccountComponent,
+    UserDashboardComponent,
+    AdminDashboardComponent
     CarDetailsComponent,
     Error404Component,
   ],
