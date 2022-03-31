@@ -3,14 +3,15 @@
     box-sizing: border-box;
 }
 
-.location-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    width: 90vw;
+.error404_container {
+    display: flex;
+    flex-direction: column;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
 }
 
-.see-details-button {
+.return_home {
     text-decoration: none;
     font-weight: bold;
     color: #1976d2;
