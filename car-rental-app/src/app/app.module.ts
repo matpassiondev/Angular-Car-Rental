@@ -25,7 +25,7 @@ import { Error404Component } from './error404/error404.component';
     LocationsComponent,
     AccountComponent,
     UserDashboardComponent,
-    AdminDashboardComponent
+    AdminDashboardComponent,
     CarDetailsComponent,
     Error404Component,
   ],
