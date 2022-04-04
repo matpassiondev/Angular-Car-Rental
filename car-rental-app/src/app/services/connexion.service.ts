@@ -16,4 +16,8 @@ export class ConnexionService {
       "token" : ""
     })
   }
+
+  getUserById(userId:string) {
+    return this.http.get('http://localhost:8080/api/v1/customers/id/'+userId+'', {headers: {accept : '*/*'}})
+  }
 }
