@@ -24,6 +24,7 @@ export class AccountComponent implements OnInit {
         sessionStorage.clear();
         sessionStorage.setItem('admin', this.user.admin);
         sessionStorage.setItem('id', this.user.id);
+        window.location.reload();
       });
     } else {
       console.log("please enter a login and a password");
