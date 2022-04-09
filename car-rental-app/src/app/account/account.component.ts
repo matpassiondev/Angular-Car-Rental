@@ -21,6 +21,7 @@ export class AccountComponent implements OnInit {
       this.authenticationService.getAuthenticate(this.theLogin, this.thePassword).subscribe(data => {
         this.user = data;
         console.log("authentification works");
+        sessionStorage.clear();
         sessionStorage.setItem('admin', this.user.admin);
         sessionStorage.setItem('id', this.user.id);
       });
