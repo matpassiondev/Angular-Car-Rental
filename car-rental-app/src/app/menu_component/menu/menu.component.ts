@@ -11,6 +11,7 @@ export class MenuComponent implements OnInit {
   isConnected:boolean = false;
   theId:any;
   logoutButtonText: string = 'Se déconnecter';
+
   constructor(private authenticationService : ConnexionService) { }
 
   ngOnInit(): void {
