@@ -1,1 +1,14 @@
-<p>account works!</p>
+<body>
+    <h3>Mon compte</h3>
+    
+    <div class="container">
+      <form>
+        <label for="flogin">Login</label>
+        <input type="text" id="flogin" name="login" placeholder="Your login..." [(ngModel)]="theLogin">
+    
+        <label for="fpassword">Password</label>
+        <input type="password" id="fpassword" name="password" placeholder="Type your password." [(ngModel)]="thePassword">
+      </form>
+      <button (click)="getAuthentification()" class="connection_button">Me connecter</button>
+    </div>
+</body>

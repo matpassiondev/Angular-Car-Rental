@@ -4,3 +4,6 @@
 <p>Elle posséde {{carDetails.horsePower}} chevaux et sa plaque est la {{carDetails.licencePlate}}.</p>
 <p>Le prix de location est de {{carDetails.rentalPrice}}, plus {{carDetails.kmPrice}} au Km.</p>
 <a routerLinkActive="active" class="Reserver">Reserver</a>
+<ng-container *ngIf="isAbleToBook">
+        <a routerLink="/booking/{{carDetails.licencePlate}}" routerLinkActive="active" class="book_the_car_button">Réserver cette voiture</a>
+</ng-container>
