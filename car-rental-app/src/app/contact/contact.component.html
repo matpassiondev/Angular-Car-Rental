@@ -6,23 +6,22 @@
     <div class="container">
       <form action="/action_page.php">
         <label for="femail">Email</label>
-        <input type="text" id="femail" name="email" placeholder="Your email..">
+        <input type="text" id="femail" name="email" placeholder="Your email.." [(ngModel)]="theEmail">
     
         <label for="fsubject">Subject</label>
-        <input type="text" id="fsubject" name="subject" placeholder="The subject..">
+        <input type="text" id="fsubject" name="subject" placeholder="The subject.." [(ngModel)]="theSubject">
     
         <label for="country">Country</label>
-        <select id="country" name="country">
+        <select id="country" name="country" [(ngModel)]="theCountry">
           <option value="france">France</option>
           <option value="suisse">Suisse</option>
           <option value="belgique">Belgique</option>
         </select>
     
         <label for="fmessage">Message</label>
-        <textarea id="fmessage" name="fmessage" placeholder="Write something.." style="height:200px"></textarea>
-    
-        <input type="submit" value="Submit">
+        <textarea id="fmessage" name="fmessage" placeholder="Write something.." style="height:200px" [(ngModel)]="theMessage"></textarea>
       </form>
+      <button (click)="sendMessage()" class="send_message_button">Envoyer</button>
     </div>
     
 </body>
