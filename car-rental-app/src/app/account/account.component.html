@@ -2,18 +2,13 @@
     <h3>Mon compte</h3>
     
     <div class="container">
-      <form action="/action_page.php">
+      <form>
         <label for="flogin">Login</label>
-        <input type="text" id="flogin" name="login" placeholder="Your login...">
+        <input type="text" id="flogin" name="login" placeholder="Your login..." [(ngModel)]="theLogin">
     
         <label for="fpassword">Password</label>
-        <input type="password" id="fpassword" name="password" placeholder="Type your password.">
-    
-        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-        <label for="vehicle1"> Admin ?</label><br><br>
-
-        <input type="submit" value="Validate">
+        <input type="password" id="fpassword" name="password" placeholder="Type your password." [(ngModel)]="thePassword">
       </form>
+      <button (click)="getAuthentification()" class="connection_button">Me connecter</button>
     </div>
-    
 </body>
