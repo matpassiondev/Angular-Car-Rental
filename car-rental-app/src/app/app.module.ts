@@ -15,6 +15,7 @@ import { UserDashboardComponent } from './user-dashboard/user-dashboard.componen
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { CarDetailsComponent } from './car-details/car-details.component';
 import { Error404Component } from './error404/error404.component';
+import { BookingComponent } from './booking/booking.component';
 
 
 @NgModule({
@@ -29,6 +30,7 @@ import { Error404Component } from './error404/error404.component';
     AdminDashboardComponent,
     CarDetailsComponent,
     Error404Component,
+    BookingComponent,
   ],
   imports: [
     BrowserModule,
