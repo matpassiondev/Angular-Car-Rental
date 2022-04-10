@@ -1,0 +1,29 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.my_bookings_title {
+    text-align: center;
+
+}
+
+.booking_container {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: auto;
+    border: 1px solid grey;
+    margin-top: 2vh;
+}
+
+.one_booking {
+    border: 1px solid grey;
+    padding: 5px 5px;
+}
+
+.booking_image {
+    max-width: 25vw;
+    height: auto;
+    object-fit: cover;
+}

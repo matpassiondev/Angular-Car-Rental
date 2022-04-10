@@ -1,3 +1,7 @@
 <p>car-details works!</p>
 <img [attr.src]=carDetails.urlImg alt="{{carDetails.model + ' ' + carDetails.color}}">
 <p>Voici une magnifique {{carDetails.model}} de la marque {{carDetails.brand}} de couleur {{carDetails.color}}</p>
+
+<ng-container *ngIf="isAbleToBook">
+        <a routerLink="/booking/{{carDetails.licencePlate}}" routerLinkActive="active" class="book_the_car_button">Réserver cette voiture</a>
+</ng-container>
