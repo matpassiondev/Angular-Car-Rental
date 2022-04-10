@@ -1,18 +1,47 @@
 <body>
-    <p>Information sur Costumer.</p>
-    <p>Prénom - nom.</p>
-    <p>Adresse.</p>
-    <p>Licence date.</p>
-    <p>Licence experience.</p>
-    <p>Etc...</p>
+    <h3 class="my_bookings_title">Mes informations</h3>
+    <p>Nom : {{account.firstName}} {{account.name}}</p>
+    <p>Date de naissance : {{account.birth}}</p>
+    <p>Adresse : {{account.address}}</p>
+    <p>Permis N° : {{account.driverLicenceNumber}}</p>
+    <p>Date d'expiration du permis : {{account.drivingLicenceExpiration}}</p>
 
     <br>
-    <p>Mes reservations</p>
-    <table border="1px">
-        <tr><td>A</td><td>1</td></tr> 
-        <tr><td>B</td><td>2</td></tr> 
-        <tr><td>C</td><td>3</td></tr> 
-        <tr><td>D</td><td>4</td></tr>
+    <h3 class="my_bookings_title">Mes reservations</h3>
+    
+    <div class="booking_container">
+        <ng-container *ngFor="let booking of customerBookings">
+            <div class="one_booking">
+            <div>
+                <img [attr.src]="booking.vehicle.urlImg" alt="" class="booking_image">
+            </div>
+            <span>
+                <p>Dates : du {{booking.begin}} au {{booking.end}}</p>
+                <p>Voiture : {{booking.vehicle.model}} - {{booking.vehicle.brand}}</p>
+                <p>Kilométrage : {{booking.km}} km</p>
+                <p>Puissance : {{booking.vehicle.horsePower}} chevaux</p>
+                <p>Couleur : {{booking.vehicle.color}}</p>
+                <p>Prix : {{booking.vehicle.rentalPrice}} €</p>
+            </span>
+            </div>
+    </ng-container>
+</div>
+    <!--
+    <div class="bookings-container">
+        <div class="one-car" >
+            <table border="1px">    
+        <tr><td>Dates</td><td>Voiture</td><td>Kilométrage</td><td>Puissance</td><td>Prix de la location</td><td>Assurance</td></tr>
+        <tr><td>{{booking.begin}} - {{booking.end}}</td><td>{{booking.vehicle.model}}</td>
+        <td>{{booking.km}}</td><td>{{booking.vehicle.horsePower}}</td>
+        <td>{{booking.vehicle.rentalPrice}}</td><td>{{booking.insurance}}</td></tr>
     </table>
+             
+            <p>Marque : {{car.brand}}</p>
+            <p>Modèle : {{car.model}}</p>
+            <p>Couleur : {{car.color}}</p>
+            <p>Prix : {{car.rentalPrice}} €</p>
+            <a routerLink="/car-details/{{car.licencePlate}}" routerLinkActive="active" class="see-details-button">Voir</a>
+        </div>
+        </div>-->
 
 </body>
