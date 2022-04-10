@@ -3,6 +3,16 @@
   <a routerLink="/locations" routerLinkActive="active" class="menu_link">Locations</a>
   <a routerLink="/contact" routerLinkActive="active" class="menu_link">Contact</a>
   <a routerLink="/account" routerLinkActive="active" class="menu_link">Mon compte</a>
+
+  <ng-container  *ngIf="isConnected">
+    <ng-container *ngIf="isAdmin">
+      <a routerLink="/admin-dashboard" routerLinkActive="active" class="menu_link">Admin Dashboard</a>
+    </ng-container>
+</ng-container>
+<ng-container *ngIf="isNotAdmin">
+  <a routerLink="/user-dashboard" routerLinkActive="active" class="menu_link">User Dashboard</a>
+</ng-container>
+
   <ng-container *ngIf="isConnected">
     <div class="menu_connection">
       <span>{{account.firstName}} {{account.name}}</span>
