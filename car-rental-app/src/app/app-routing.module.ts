@@ -8,6 +8,7 @@ import { AccountComponent } from './account/account.component';
 import { CarDetailsComponent } from './car-details/car-details.component';
 import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
 import { UserDashboardComponent } from './user-dashboard/user-dashboard.component';
+import { BookingComponent } from './booking/booking.component';
 import { Error404Component } from './error404/error404.component';
 
 const routes: Routes = [
@@ -19,6 +20,7 @@ const routes: Routes = [
   {path: 'admin-dashboard', component:AdminDashboardComponent},
   {path: 'user-dashboard', component:UserDashboardComponent},
   {path: 'car-details/:licencePlate', component: CarDetailsComponent},
+  {path: 'booking/:licencePlate', component: BookingComponent},
   {path: '**', component: Error404Component},
 ]
 
