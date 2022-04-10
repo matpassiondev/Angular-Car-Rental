@@ -1,1 +1,9 @@
-<p>booking works! {{licencePlate}}</p>
+<form>
+    <label for="fbegin">Date de départ</label>
+        <input type="date" id="fbegin" name="begin" [(ngModel)]="theBeginDate">
+    <label for="fend">Date de retour</label>
+        <input type="date" id="fend" name="end" [(ngModel)]="theEndDate">
+        <label for="fkm">Nombre de kilomètres prévus</label>
+        <input type="number" id="fkm" name="km" placeholder="Nombre de kilomètres prévus" [(ngModel)]="theKilometres">
+</form>
+<button (click)="bookingConfirmed()" class="booking_confirmation_button">Confirmer</button>

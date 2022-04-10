@@ -11,4 +11,8 @@ export class BookingService {
   getCustomerBookings(customerId:string) {
     return this.http.get('http://localhost:8080/api/v1/bookings/customerId/'+customerId+'', {headers: {accept : '*/*'}})
   }
+
+  saveBooking(theBookingInfos:any){
+    return this.http.post('http://localhost:8080/api/v1/bookings/add', theBookingInfos);
+  }
 }
