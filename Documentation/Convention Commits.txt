@@ -1,0 +1,30 @@
+Convention de nommage des commits
+
+Par Hugo Pelletier et Matthias Fransioli
+
+----------------------------------------
+
+1) Écrire en anglais (si le projet est repris plus tard à l'international/si il est opensource)
+
+2) Faire des commit atomiques (commits les plus courts possibles : une modification = un commit. 
+					 Cela permet de se repérer facilement dans l'historique)
+
+3) Forme du commit => type(scope): sujet
+
+   a) Les différents types sont :
+
+	build: Système de build (exemple : gulp, webpack, npm) 
+	ci: Intégration continue (exemple scopes: Travis, Circle, BrowserStack, SauceLabs) 
+	docs: Documentation 
+	feat: Ajout d'une fonctionnalité 
+	fix: Correction de bogue 
+	perf: Amélioration des performances 
+	refactor: Changement du code qui ne change rien au fonctionnement 
+	style: Changement du style du code (sans changer la logique) 
+	test: Modification des tests
+
+   b) Le scope décrit la portée de la modification.
+
+   c) Le sujet contient une description succincte des changements
+
+4) En utilisant l'impératif présent ("change", et non pas "changed" ou "changes"), sans majuscule au début, pas de "." à la fin de la description
